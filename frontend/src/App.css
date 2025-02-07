@@ -1,0 +1,40 @@
+/* App.css */
+
+/* Overall body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it takes full height */
+}
+
+/* To ensure content after the navbar isn't hidden behind it */
+main {
+  padding-top: 60px; /* Adjust according to navbar height */
+  flex-grow: 1; /* Allow content to take remaining space */
+}
+
+/* For pages like HomePage or CreatePage, add space between them */
+.page-content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit page width for better readability */
+}
+
+/* If you want to style a footer (optional) */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Push footer to the bottom */
+}

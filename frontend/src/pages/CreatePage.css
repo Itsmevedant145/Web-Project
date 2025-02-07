@@ -1,0 +1,114 @@
+/* CreatePage.css */
+
+/* Container for the Create Page */
+.create-page {
+  margin-top: 80px;
+  padding: 20px;
+  width: 60%;
+  max-width: 800px;
+  background-color: #a3c6e1; /* Soft pastel blue background */
+  min-height: 400px;
+  max-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Style for the Toast Message */
+.toast-message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db; /* Blue color */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: showMessage 0.5s forwards;
+}
+
+/* Keyframes for the Toast Message animation */
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Styles for the form and inputs */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #34495e; /* Dark text for the title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #34495e; /* Dark gray for labels */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  border: 1px solid #0f0000;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db; /* Blue button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+/* CreatePage.css & EditPage.css */
+
+/* Style for the Loading Bar */
+.loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #3498db;
+  animation: loading 2s infinite; /* Animate the bar */
+}
+
+/* Keyframes for loading bar animation */
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
